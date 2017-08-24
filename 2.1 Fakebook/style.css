@@ -1,0 +1,79 @@
+.header {           /* block element does not fill the whole upper part of the site */
+  background-color: grey;
+  height: 100px;
+  width: 100%;
+  opacity: 0.9;
+  }
+
+#h1 {               /* h1 is not fully working, because its wrapped in div-style...how can i override div-style? */
+  color: white;
+  font: 40px arial, sans-serif;
+  text-align: center;
+  border: 1px solid;
+  padding: 25px;    /* how can i match the padding with the block-element? its not perfectly in line */
+}
+
+.opac02 {
+  opacity: 0.4;
+  background-color: #B22800;
+  height: 40px;
+  width: 350px;
+}
+
+.opac02:hover {
+  opacity: 1;
+}
+
+.opac1 {
+  opacity: 1;
+  height: 250px;
+  width: 250px;
+  border: 3px black solid;
+  padding: 1px;
+}
+
+.opac1:hover {
+  opacity: 0.4;
+  border: 3px grey solid;
+  padding: 1px;
+  }
+
+
+
+.h11 {
+  color: black;
+  font: 25px arial, bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.bu {
+  font-size: 10px;
+  color: grey;
+  font-style: italic;
+}
+
+.lt {
+  font-size: 14px;
+  font-family: Impact;
+  font-style: bold;
+  color: grey;
+}
+
+.sh {
+  font: 15px arial, bold;
+}
+
+.buttonstyle {
+  font-size: 22px;
+  color: red;
+  border: 3px dotted black;
+  padding: 5px;
+  background-color: #FFDAAC
+}
+
+.buttonstyle:hover {
+  border: 3px white solid;
+  padding: 5px;
+  border: 3px solid black;
+}
