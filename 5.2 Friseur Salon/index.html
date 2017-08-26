@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michael Reitberger">
+    <meta name="description" content="Webseite von Friseursalon FIRST!">
+    <meta name="keywords" content="Friseur Wien, Haarschnitt, Haare gelen, Haare waschen, Haare legen">
+
+    <title>Friseursalon FIRST!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="Home" class="nav navbar-default navbar-static-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <p id="brand">Friseursalon FIRST!</p>
+                </a>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#Angebot">Unser Angebot</a></li>
+                        <li><a href="#Termin">Terminvereinbarung</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#Uns" data-toggle="modal">Über uns</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/Salon.jpg" alt="Salon" class="img-responsive">
+                <div class="carousel-caption">
+                    <h3>Haar ist Trumpf</h3>
+                    <p>Du fühlst Dich wie ein Looser? Wir stylen Dich zum Winner. Denn Du kommst immer first!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/Bunt.jpg" alt="Bunt" class="img-responsive">
+                <div class="carousel-caption">
+                    <h3>Der Kanarienvogel</h3>
+                    <p>Braun, blond, schwarz zu fad? Machs wie im Zoo: Wir schmieren dir Farbe auf's Haupt.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/Style.jpg" alt="Style" class="img-responsive">
+                <div class="carousel-caption">
+                    <h3>Wir gelen dich</h3>
+                    <p>Du bist überfordert beim Haare gelen? Gib uns 100 und du bekommst die Sturmfrisur Deines Lebens von uns</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+    <hr>
+
+    <div id="Angebot" class="container" align="center">
+        <h2>Unser Angebot</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Schneiden</h4>
+                <img src="img/Schneiden.jpg">
+                <div class="teasercontent">
+                    <p>Hässliche Friese? Wir schneiden Dir die Haare so, dass sie Deinem leeren Gesichtsausdruck und deiner hohlen Birne noch mehr Ausdruck verleihen.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Föhnen</h4>
+                <img src="img/Foehnen.jpg">
+                <div class="teasercontent">
+                    <p>Föhnen bereitet Dir Probleme? Wir helfen Dir gerne und blasen Dich mal richtig durch.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Legen</h4>
+                <img src="img/Legen.jpg">
+                <div class="teasercontent">
+                    <p>Nach dem Schneiden und Föhnen ist es wichtig, die Haare richtig zu legen. Wir können Dir zwar nicht erklären, was das genau ist, aber es ist auf jeden Fall mörder!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="Termin" class="container" align="center">
+        <h2>Terminvereinbarung</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="InputName">Name</label>
+                        <input type="Text" class="form-control" id="InputName" placeholder="Vorname Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail">E-Mail-Adresse</label>
+                        <input type="email" class="form-control" id="InputEmail" placeholder="E-Mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputTel">Telefonnummer</label>
+                        <input type="number" class="form-control" id="InputTel" placeholder="Telefonnummer">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDate">Gewünschtes Datum</label>
+                        <input type="date" class="form-control" id="InputDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputMessage">Nachricht an uns</label>
+                            <textarea class="form-control" id="InputMessage" rows="4"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox">Ja, ich bin damit einverstanden, alle meine Rechte abzutreten</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <h4>Unsere Geschäftszeiten</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                <h6>Wochentag</h6>
+                            </td>
+                            <td>
+                                <h6>Wir sind für Dich da von:</h6>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding-top:15px;">Montag</td>
+                            <td style="padding-top:15px;">10:00 bis 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dienstag</td>
+                            <td>10:00 bis 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mittwoch</td>
+                            <td>10:00 bis 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Donnerstag</td>
+                            <td>10:00 bis 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Freitag</td>
+                            <td>10:00 bis 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Samstag</td>
+                            <td>10:00 bis 10:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="FAQ" class="container" align="center">
+        <h2>Dumme Fragen? Klar doch!</h2>
+
+        <br>
+
+            <div class="panel-group" id="accordion">
+                <div class="faqHeader">Überfordert? Wir helfen gerne. Im Folgenden die häufigsten Fragen, die man uns stellt:</div>
+
+                <br>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Äh, Friseur?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Du Mensch. Du haben Haare. Haare wachsen. Wir machen Haare kürzer.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Friseur?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img src="img/Dumm.jpg" class="Dumm">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Meine Haare sind sehr lang. Was kann ich tun?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Geh zum Friseur!
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <hr>
+
+    <div class="modal fade" id="Uns" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" align="center">
+                <div class="modal-header">
+                    <h4>Wer wir sind</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Team.jpg" class="img-responsive">
+                    <p><strong>Wir sind Tick Trick und Track<br>Wir machen euch die Haare schön.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container foot">
+            <div class="row">
+                <div class="col-xs-4">
+                    <ul class="list-unstyled">
+                        <li><strong>Kontakt</strong><li>
+                        <li>Friseursalon FIRST!</li>
+                        <li>Telefon: 01-0800-666-666</li>
+                        <li>Amerikagasse 1, 1010 Wien</li>
+                        <li>first@first.at</li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <img src="img/Kontakt">
+                </div>
+                <div class="col-xs-4">
+                    <ul class="list-unstyled">
+                        <li><strong>Navigation</strong><li>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Angebot">Unser Angebot</a></li>
+                        <li><a href="#Termin">Terminvereinbarung</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#Uns">Über uns</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-xs-6">
+                        <ul class="list-unstyled list-inline pull-left foots">
+                            <li><a href="#">Impressum</a></li>
+                            <li><a href="#">AGB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="text-muted pull-right">© 2017 Friseusalon FIRST!</p>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
