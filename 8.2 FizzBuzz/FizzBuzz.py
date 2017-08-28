@@ -6,7 +6,7 @@ print "FizzBuzz"
 print "-" * 20
 print "-" * 20
 
-x = int(raw_input("Please enter a number between 1 and 100:" ))
+x = raw_input("Please enter a number between 1 and 100:" )
 print x
 
 try:
