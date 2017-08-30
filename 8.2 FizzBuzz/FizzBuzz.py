@@ -12,7 +12,7 @@ print x
 try:
     x = int(x)
 
-    for num in range(1, 100):
+    for num in range(x, 100):
         if num % 3 == 0:
             print "Fizz"
         elif num % 5 == 0:
